@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <title>Library</title>
+  </head>
+  <body class="body">
+    <div class="main_container">
+      <header class="header">
+        <div class="container header_block">
+          <h1 class="h1 header_title">Brooklyn Public Library</h1>
+          <div class="header_navigation">
+            <nav class="menu">
+              <ul class="menu_list">
+                <li class="menu_item">
+                  <a href="#" class="menu_link">About</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">Favorites</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">Coffee shop</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">Contacts</a>
+                </li>
+                <li class="menu_item">
+                  <a href="#" class="menu_link">Library Card</a>
+                </li>
+            </ul>
+           </nav>
+            <div class="log_in_block">
+              <img
+                src="./assets/icons/login.svg"
+                alt="login"
+                class="log_in_image"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="welcome">
+          <div class="container welcome_block">
+            <div class="welcome_title_block">
+              <h2 class="h2 welcome_title_block">
+                Welcome<br> to the Brooklyn Library
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container about_block">
+            <div class="title_block">
+              <h3 class="h3 about_title">About</h3>
+              <div class="about_line line"></div>
+            </div>
+            <div class="about_text">
+              The Brooklyn Library is a free workspace, a large number of books
+              and a cozy coffee shop inside
+            </div>
+            <div class="about_slider">
+              <div class="slider_container">
+                <div class="slider_image_block">
+                  <img
+                    src="./assets/images/about1.jpg"
+                    alt="about1"
+                    class="slider_image"
+                  />
+                </div>
+                <div class="slider_image_block">
+                  <img
+                    src="./assets/images/about2.jpg"
+                    alt="about2"
+                    class="slider_image"
+                  />
+                </div>
+                <div class="slider_image_block">
+                  <img
+                    src="./assets/images/about3.jpg"
+                    alt="about3"
+                    class="slider_image"
+                  />
+                </div>
+                <div class="slider_image_block display_none">
+                  <img
+                    src="./assets/images/about4.jpg"
+                    alt="about4"
+                    class="slider_image"
+                  />
+                </div>
+                <div class="slider_image_block display_none">
+                  <img
+                    src="./assets/images/about5.jpg"
+                    alt="about5"
+                    class="slider_image"
+                  />
+                </div>
+              </div>
+              <div class="slider_dots">
+                <div class="dot active_dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="favourites">
+          <div class="container favourites_block">
+            <div class="title_block">
+              <h3 class="h3 about_title">Favorites</h3>
+              <div class="about_line line"></div>
+            </div>
+            <div class="input_block">
+              <h4 class="h4 input_title">Pick favorites of season</h4>
+              <div class="input_forms_block">
+                <form class="input_form">
+                  <input class="input" checked="'true" id="winter" type="radio" name="question" />
+                  <label class="input_label" for="winter">Winter</label>
+                </form>
+                <form class="input_form">
+                  <input class="input" id="spring" type="radio" name="question" />
+                  <label class="input_label" for="spring">Spring</label>
+                </form>
+                <form class="input_form">
+                  <input class="input" id="summer" type="radio" name="question" />
+                  <label class="input_label" for="summer">Summer</label>
+                </form>
+                <form class="input_form">
+                  <input class="input" id="autumn" type="radio" name="question" />
+                  <label class="input_label" for="autumn">Autumn</label>
+                </form>
+              </div>
+              
+            </div>
+            <div class="books_block">
+                <div class="winter_block books_block_season">
+                  <div class="book_item winter_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">The Book Eaters</h6>
+                      <h7 class="h7 book_author">By Sunyi Dean</h7>
+                    </div>
+                    <p class="book_description">
+                      An unusual sci-fi story about a book eater woman who tries
+                      desperately to save her dangerous mind-eater son from
+                      tradition and certain death. Complete with dysfunctional
+                      family values, light Sapphic romance, and a strong,
+                      complex protagonist. Not for the faint of heart.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookwinter1.jpg"
+                        alt="bookwinter1"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item winter_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Cackle</h6>
+                      <h7 class="h7 book_author">By Rachel Harrison</h7>
+                    </div>
+                    <p class="book_description">
+                      Are your Halloween movies of choice The Witches of
+                      Eastwick and Practical Magic? Look no further than here -
+                      where a woman recovering from a breakup moves to a quaint
+                      town in upstate New York and befriends a beautiful witch.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookwinter2.jpg"
+                        alt="bookwinter2"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item winter_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">
+                        Dante: Poet of the Secular World
+                      </h6>
+                      <h7 class="h7 book_author">By Erich Auerbach</h7>
+                    </div>
+                    <p class="book_description">
+                      Auerbach's engaging book places the 'Comedy' within the
+                      tradition of epic, tragedy, and philosophy in general,
+                      arguing for Dante's uniqueness as one who raised the
+                      individual and his drama of soul into something of divine
+                      significance—an inspired introduction to Dante's main
+                      themes.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookwinter3.jpg"
+                        alt="bookwinter3"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item winter_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">The Last Queen</h6>
+                      <h7 class="h7 book_author">By Clive Irving</h7>
+                    </div>
+                    <p class="book_description">
+                      A timely and revelatory new biography of Queen Elizabeth
+                      (and her family) exploring how the Windsors have evolved
+                      and thrived as the modern world has changed around them.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookwinter4.jpg"
+                        alt="bookwinter4"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="spring_block display_none_season books_block_season">
+                  <div class="book_item spring_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">The Body</h6>
+                      <h7 class="h7 book_author">By Stephen King</h7>
+                    </div>
+                    <p class="book_description">
+                      Powerful novel that takes you back to a nostalgic time,
+                      exploring both the beauty and danger and loss of innocence
+                      that is youth.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookspring1.jpg"
+                        alt="bookspring1"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item spring_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">
+                        Carry: A Memoir of Survival on Stolen Land
+                      </h6>
+                      <h7 class="h7 book_author">By Toni Jenson</h7>
+                    </div>
+                    <p class="book_description">
+                      This memoir about the author's relationship with gun
+                      violence feels both expansive and intimate, resulting in a
+                      lyrical indictment of the way things are.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookspring2.jpg"
+                        alt="bookspring2"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item spring_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Days of Distraction</h6>
+                      <h7 class="h7 book_author">By Alexandra Chang</h7>
+                    </div>
+                    <p class="book_description">
+                      A sardonic view of Silicon Valley culture, a meditation on
+                      race, and a journal of displacement and belonging, all in
+                      one form-defying package of spare prose.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookspring3.jpg"
+                        alt="bookspring3"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item spring_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Dominicana</h6>
+                      <h7 class="h7 book_author">By Angie Cruz</h7>
+                    </div>
+                    <p class="book_description">
+                      A fascinating story of a teenage girl who marries a man
+                      twice her age with the promise to bring her to America.
+                      Her marriage is an opportunity for her family to
+                      eventually immigrate. For fans of Isabel Allende and Julia
+                      Alvarez.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookspring4.jpg"
+                        alt="bookspring4"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="summer_block display_none_season books_block_season">
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Crude: A Memoir</h6>
+                      <h7 class="h7 book_author">
+                        By Pablo Fajardo & ​​Sophie Tardy-Joubert
+                      </h7>
+                    </div>
+                    <p class="book_description">
+                      Drawing and color by Damien Roudeau | This book
+                      illustrates the struggles of a group of indigenous
+                      Ecuadoreans as they try to sue the ChevronTexaco company
+                      for damage their oil fields did to the Amazon and her
+                      people
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/booksummer1.jpg"
+                        alt="booksummer1"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Let My People Go Surfing</h6>
+                      <h7 class="h7 book_author">By Yvon Chouinard</h7>
+                    </div>
+                    <p class="book_description">
+                      Chouinard—climber, businessman, environmentalist—shares
+                      tales of courage and persistence from his experience of
+                      founding and leading Patagonia, Inc. Full title: Let My
+                      People Go Surfing: The Education of a Reluctant
+                      Businessman, Including 10 More Years of Business Unusual.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/booksummer2.jpg"
+                        alt="booksummer2"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">The Octopus Museum: Poems</h6>
+                      <h7 class="h7 book_author">By Brenda Shaughnessy</h7>
+                    </div>
+                    <p class="book_description">
+                      This collection of bold and scathingly beautiful feminist
+                      poems imagines what comes after our current age of
+                      environmental destruction, racism, sexism, and divisive
+                      politics.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/booksummer3.jpg"
+                        alt="booksummer3"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Shark Dialogues: A Novel</h6>
+                      <h7 class="h7 book_author">By Kiana Davenport</h7>
+                    </div>
+                    <p class="book_description">
+                      An epic saga of seven generations of one family
+                      encompasses the tumultuous history of Hawaii as a Hawaiian
+                      woman gathers her four granddaughters together in an
+                      erotic tale of villains and dreamers, queens and
+                      revolutionaries, lepers and healers.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/booksummer4.jpg"
+                        alt="booksummer4"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="autumn_block display_none_season books_block_season">
+                  <div class="book_item autumn_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Casual Conversation</h6>
+                      <h7 class="h7 book_author">By Renia White</h7>
+                    </div>
+                    <p class="book_description">
+                      White's impressive debut collection takes readers through
+                      and beyond the concepts of conversation and the casual -
+                      both what we say to each other and what we don't,
+                      examining the possibilities around how we construct and
+                      communicate identity.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookautumn1.jpg"
+                        alt="bookautumn1"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item autumn_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">The Great Fire</h6>
+                      <h7 class="h7 book_author">By Lou Ureneck</h7>
+                    </div>
+                    <p class="book_description">
+                      The harrowing story of an ordinary American and a
+                      principled Naval officer who, horrified by the burning of
+                      Smyrna, led an extraordinary rescue effort that saved a
+                      quarter of a million refugees from the Armenian Genocide
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookautumn2.jpg"
+                        alt="bookautumn2"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Rickey: The Life and Legend</h6>
+                      <h7 class="h7 book_author">By Howard Bryant</h7>
+                    </div>
+                    <p class="book_description">
+                      With the fall rolling around, one can't help but think of
+                      baseball's postseason coming up! And what better way to
+                      prepare for it than reading the biography of one of the
+                      game's all-time greatest performers, the Man of Steal,
+                      Rickey Henderson?
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookautumn3.jpg"
+                        alt="bookautumn3"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                  <div class="book_item summer_book">
+                    <div class="book_block_title_block">
+                      <h5 class="h5 book_block_title">Staff Picks</h5>
+                      <div class="book_block_line"></div>
+                    </div>
+                    <div class="book_title_block">
+                      <h6 class="h6 book_title">Slug: And Other Stories</h6>
+                      <h7 class="h7 book_author">By Megan Milks</h7>
+                    </div>
+                    <p class="book_description">
+                      Exes Tegan and Sara find themselves chained together by
+                      hairballs of codependency. A father and child experience
+                      the shared trauma of giving birth to gods from their
+                      wounds.
+                    </p>
+                    <button class="book_button">Buy</button>
+                    <div class="book_image_block">
+                      <img
+                        src="./assets/images/bookautumn4.jpg"
+                        alt="bookautumn4"
+                        class="book_image"
+                      />
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="coffeeshop">
+          <div class="container coffeeshop_block">
+            <div class="title_block">
+              <h3 class="h3 coffeshop_title">Coffee shop</h3>
+              <div class="coffeshop_line line"></div>
+            </div>
+            <p class="coffeeshop_text">
+              In our library, we have of cozy coffee shop, welcoming in
+              customers with frothy cappuccinos and friendly conversation. you
+              can get a favorite book and read in coffee shop. Our barista to
+              cook you best coffee, and also you can try desserts from bakery.
+            </p>
+            <div class="coffee_shop_container">
+              <div class="coffeshop_prices_block coffee_tea">
+                <h3 class="h3 prices_title">Coffee & Tea</h3>
+                <div class="prices_menu">
+                  <div class="price_item">
+                    <div class="price_name">Cold Brew Coffee</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$3</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name">French Press Pot</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$5</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name">Espresso</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$2</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name">Cappuccino</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$4</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name">Hot tea</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$2</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name">Cold tea</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="coffeshop_prices_block desserts_cakes">
+                <h3 class="h3 prices_title desserts_name_cakes">Desserts & Cakes</h3>
+                <div class="prices_menu">
+                  <div class="price_item">
+                    <div class="price_name desserts_name_cakes">Forest Gateau</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$16</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name desserts_name_cakes">Blue Moon</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$16</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name desserts_name_cakes">Truffle Cake</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$15</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name desserts_name_cakes">Chocolate Cake</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$18</div>
+                  </div>
+                  <div class="price_item">
+                    <div class="price_name desserts_name_cakes">Poet’s Dream Cake</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$16</div>
+                  </div>
+                  <div class="price_item price_desserts">
+                    <div class="price_name desserts_name_cakes">Pineapple Cake</div>
+                    <div class="price_line"></div>
+                    <div class="price_amount">$14</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container contacts_block">
+            <div class="title_block">
+              <h3 class="h3 contacts_title">Our Contacts</h3>
+              <div class="contacts_line line"></div>
+            </div>
+            <div class="contacts_container">
+              <div class="contacts_block_container">
+                <h6 class="h6 contacts_block_container_title">For all Library inquiries:</h6>
+                <div class="contacts_tel">
+                  <div class="contacts_tel_item">
+                    <p class="tel_text">Please call</p>
+                    <a href="tel:+6177302370" class="tel_link"
+                      >(617) 730-2370</a
+                    >
+                  </div>
+                  <div class="contacts_tel_item">
+                    <p class="tel_text">For TTY service, please call</p>
+                    <a href="tel:+6177302370" class="tel_link"
+                      >(617) 730-2370</a
+                    >
+                  </div>
+                  <div class="contacts_tel_item">
+                    <p class="tel_text">Putterham Library:</p>
+                    <a href="tel:+6177302385" class="tel_link"
+                      >(617) 730-2385</a
+                    >
+                  </div>
+                </div>
+                <div class="contacts_staff">
+                  <h6 class="h6 staff_title">Senior Staff</h6>
+                  <div class="staff_item">
+                    <p class="staff_text">Library Director:</p>
+                    <p class="staff_person">Amanda Hirst</p>
+                  </div>
+                </div>
+              </div>
+              <div class="map">
+                <iframe
+                  class="map_image"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.5021789554285!2d-73.9921311438605!3d40.69580002915306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbGF6YSBXLCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2str!4v1689102186763!5m2!1sru!2str"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="library_card">
+          <div class="container card">
+            <div class="title_block">
+              <h3 class="h3 card_title">Digital Library Cards</h3>
+              <div class="card_line line"></div>
+            </div>
+            <div class="find_container">
+              <div class="find_card_block">
+              <p class="find_card_title">Find your Library card</p>
+              <div class="find_input_container">
+                <div class="input_block">
+                  <p class="input_title">Brooklyn Public Library</p>
+                  <input placeholder="Reader's name " type="text" class="input_name" />
+                  <input placeholder="Card number" type="number" class="input_card" />
+                </div>
+                <button class="input_button">Check the card</button>
+              </div>
+            </div>
+            <div class="get_reader_block">
+              <p class="reader_title">Get a reader card</p>
+              <p class="reader_text">
+                You will be able to see a reader card after logging into account
+                or you can register a new account
+              </p>
+              <div class="reader_buttons_block">
+                <button class="button_sign">Sign Up</button>
+                <button class="button_log">Log in</button>
+              </div>
+            </div> 
+            </div>
+           
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer_block"></div>
+        <div class="common_links_block">
+          <div class="adress_links_block">
+            <p class="adress_link_item">
+              <a href="" class="adress_link"
+                >286 Cadman Plaza, New York, NY 11238, United States</a
+              >
+            </p>
+            <p class="adress_link_item">Mon - Fri 08:00 am - 07:00 pm</p>
+          </div>
+          <div class="media_links_block">
+            <p class="media_link_item">
+              <ul class="media_list">
+                <li class="media_item">
+                  <a href="" class="media_link">
+                    <img src="./assets/icons/twitter.svg" alt="twitter" class="media_image">
+                  </a>
+                </li>
+                <li class="media_item">
+                  <a href="" class="media_link">
+                    <img src="./assets/icons/instagram.svg" alt="instagram" class="media_image">
+                  </a>
+                </li>
+                <li class="media_item">
+                  <a href="" class="media_link">
+                    <img src="./assets/icons/facebook.svg" alt="facebook" class="media_image">
+                  </a>
+                </li>
+              </ul>
+            </p>
+            <p class="adress_link_item">Mon - Fri 08:00 am - 07:00 pm</p>
+          </div>
+        </div>
+        <div class="school_links_block">
+          <p class="school_link_item year">2023</p>
+          <p class="school_link_item">
+            <a href="https://rs.school/js-stage0/" class="school_link"
+              >The Rolling Scopes School</a
+            >
+          </p>
+          <p class="school_link_item">
+            <a href="" class="shool_link">Anastasiya Andronava</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
