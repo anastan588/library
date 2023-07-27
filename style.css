@@ -26,6 +26,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -280,7 +282,7 @@ h6 {
   padding-bottom: 20px;
 }
 
-.input_block {
+.input_block_favourites {
   margin-top: 19px;
   display: flex;
   flex-direction: column;
@@ -464,8 +466,7 @@ input[type=radio] {
   width: 100%;
   display: grid;
   grid-template-columns: 220px auto auto;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
   align-items: center;
 }
 
@@ -667,24 +668,6 @@ input[type=radio] {
   padding-left: 20px;
 }
 
-.input_name::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 187.5%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_name:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 187.5%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
 .input_name::placeholder {
   color: #8e8e8e;
   font-family: "Forum", sans-serif;
@@ -700,24 +683,6 @@ input[type=radio] {
   height: 66px;
   width: 520px;
   padding-left: 20px;
-}
-
-.input_card::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 187.5%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_card:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 187.5%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
 }
 
 .input_card::placeholder {
