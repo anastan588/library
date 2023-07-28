@@ -187,7 +187,7 @@ $border_color_input: #bb945f;
 }
 .menu_list {
   display: flex;
-  gap: 30px;
+  gap: 30.5px;
 }
 .menu_item {
 }
@@ -209,12 +209,13 @@ $border_color_input: #bb945f;
 .welcome {
 }
 .welcome_block {
-  padding-top: 255px;
-  padding-bottom: 195px;
+  padding-top: 220px;
+  padding-bottom: 168px;
   display: flex;
   background-image: url('./assets/images/welcome.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding-left: 0px;
 }
 .welcome_title_block {
   background-color: $background_color_welcome;
@@ -237,7 +238,7 @@ $border_color_input: #bb945f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-bottom: 40px;
   gap: 20px;
 }
@@ -307,15 +308,15 @@ $border_color_input: #bb945f;
 .favourites_block {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 23px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .input_block_favourites {
   margin-top: 19px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 44px;
 }
 .h4 {
   color: $color_text3;
@@ -324,15 +325,16 @@ $border_color_input: #bb945f;
   font-size: 125%;
   line-height: 100%;
 }
-.input_title {
+.input_title_favourites{
 }
 .input_forms_block {
   display: flex;
-  gap: 90px;
+  gap: 95px;
 }
 .input_form {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
 }
 
 .input {
@@ -346,28 +348,32 @@ $border_color_input: #bb945f;
 }
 input[type='radio'] {
   accent-color: $color_text3;
+  height: 17px;
+  width: 17px;
 }
 .books_block {
   display: flex;
   width: 100%;
+  margin-top: 19px;
 }
 .books_block_season {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  justify-content: space-between;
-  // column-gap: 260px;
+  column-gap: 260px;
   row-gap: 40px;
+  padding-right: 40px;
 }
 .winter_block {
 }
 .book_item {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 20px;
   position: relative;
-  padding: 15px 175px 15px 20px;
+  padding: 15px 20px 60px 20px;
   border: 1px solid $border_color_book_item;
 }
 .winter_book {
@@ -375,13 +381,13 @@ input[type='radio'] {
 .book_block_title_block {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
 }
 .h5 {
   color: $color_text3;
   font-family: $font_forum_bold;
   font-size: 125%;
-  line-height: 200%;
+  line-height: 190%;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -395,7 +401,7 @@ input[type='radio'] {
 .book_title_block {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
 }
 .h6 {
   color: $color_text3;
@@ -420,7 +426,7 @@ input[type='radio'] {
 .book_author {
 }
 .book_description {
-  max-width: 355px;
+  max-width: 357px;
   color: $color_text3;
   font-family: $font_inter_regular;
   font-size: 93.75%;
@@ -430,6 +436,10 @@ input[type='radio'] {
   text-transform: capitalize;
 }
 .book_button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  margin-top: -3px;
   width: 75px;
   padding: 9px 27px;
   color: $color_text2;
@@ -444,8 +454,8 @@ input[type='radio'] {
 }
 .book_image_block {
   position: absolute;
-  bottom: 0;
-  right: -40px;
+  bottom: -1px;
+  right: -41px;
 }
 .book_image {
 }
@@ -495,8 +505,7 @@ input[type='radio'] {
   flex-direction: column;
   gap: 40px;
 }
-.coffee_tea {
-}
+
 .prices_title {
   color: $color_text4;
 }
@@ -508,10 +517,15 @@ input[type='radio'] {
 .price_item {
   width: 100%;
   display: grid;
-  grid-template-columns: 220px auto auto;
-  column-gap: 60px;
+  grid-template-columns: 230px auto auto;
+  column-gap: 58px;
   align-items: center;
 }
+
+.coffee_tea_item {
+  grid-template-columns: 200px auto auto;
+}
+
 .price_name {
   display: flex;
   color: $color_text3;
@@ -522,6 +536,7 @@ input[type='radio'] {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+
 .price_line {
   width: 100px;
   height: 1px;
@@ -577,10 +592,13 @@ input[type='radio'] {
   text-transform: capitalize;
 }
 .contacts_tel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .contacts_tel_item {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 .tel_text {
   color: $color_text3;
@@ -617,7 +635,7 @@ input[type='radio'] {
 }
 .staff_item {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 .staff_text {
   color: $color_text3;
@@ -641,14 +659,15 @@ input[type='radio'] {
   height: 100%;
 }
 .map_image {
-  height: 100%;
+  height: 412px;
+  width: 684px;
 }
 .library_card {
 }
 .card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 42px;
   padding-top: 20px;
   padding-bottom: 41px;
 }
@@ -664,7 +683,7 @@ input[type='radio'] {
 .find_card_block {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 33px;
 }
 .find_card_title {
   color: $color_text3;
@@ -679,7 +698,7 @@ input[type='radio'] {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 20px 40px 20px;
+  padding: 17px 17px 27px 17px;
   border: 3px solid $border_color_input;
   align-items: center;
 }
@@ -703,11 +722,14 @@ input[type='radio'] {
   width: 520px;
   height: 66px;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
 }
 .input_name::placeholder {
   color: $color_text5;
   font-family: $font_forum_bold;
-  font-size: 187.5%;
+  font-size: 225%;
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.6px;
@@ -715,14 +737,15 @@ input[type='radio'] {
 .input_card {
   margin-top: 5px;
   border-radius: 10px;
-  height: 66px;
   width: 520px;
   padding-left: 20px;
+  padding-top: 10px;
+  height: 66px;
 }
 .input_card::placeholder {
   color: $color_text5;
   font-family: $font_forum_bold;
-  font-size: 187.5%;
+  font-size: 225%;
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.6px;
@@ -735,7 +758,7 @@ input[type='radio'] {
   font-size: 125%;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 10px 40px;
+  padding: 9px 39px;
   max-width: 250px;
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
@@ -773,11 +796,11 @@ input[type='radio'] {
   color: $color_text2;
   text-align: center;
   font-family: $font_inter_bold;
-  font-size: 62.5;
+  font-size: 62.5%;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 1px;
-  padding: 10px 15px;
+  padding: 8px 14px;
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
   background-color: $background_color_buttons_books;
@@ -786,11 +809,11 @@ input[type='radio'] {
   color: $color_text2;
   text-align: center;
   font-family: $font_inter_bold;
-  font-size: 62.5;
+  font-size: 62.5%;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 1px;
-  padding: 10px 15px;
+  padding: 9px 19px;
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
   background-color: $background_color_buttons_books;
@@ -803,7 +826,7 @@ input[type='radio'] {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 30px
+  gap: 29px
 }
 .common_links_block {
   color: $color_text1;
@@ -813,6 +836,7 @@ font-weight: 400;
 line-height: 133.333%;
 display: flex;
 flex-direction: column;
+gap: 11px;
 }
 .adress_links_block {
   display: flex;
@@ -821,6 +845,11 @@ flex-direction: column;
 }
 .adress_link_item {
   max-width: 230px;
+}
+
+.time_link_item {
+  max-width: 150px;
+ text-align: end;
 }
 .adress_link {
   color: $color_text1;
@@ -835,7 +864,7 @@ flex-direction: column;
 }
 .media_list {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 .media_item {
 }
@@ -849,6 +878,7 @@ flex-direction: column;
   padding-bottom: 44px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .school_link_item {
   color: $color_text1;
@@ -857,6 +887,10 @@ flex-direction: column;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 2px;
+
+}
+.school {
+    padding-left: 75px;
 }
 .year {
 }
