@@ -26,8 +26,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -162,7 +160,7 @@ h6 {
 
 .menu_list {
   display: flex;
-  gap: 30px;
+  gap: 30.5px;
 }
 
 .menu_link {
@@ -179,12 +177,13 @@ h6 {
 }
 
 .welcome_block {
-  padding-top: 255px;
-  padding-bottom: 195px;
+  padding-top: 220px;
+  padding-bottom: 168px;
   display: flex;
   background-image: url("./assets/images/welcome.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  padding-left: 0px;
 }
 
 .welcome_title_block {
@@ -208,7 +207,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-bottom: 40px;
   gap: 20px;
 }
@@ -277,16 +276,16 @@ h6 {
 .favourites_block {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 23px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .input_block_favourites {
   margin-top: 19px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 44px;
 }
 
 .h4 {
@@ -299,12 +298,13 @@ h6 {
 
 .input_forms_block {
   display: flex;
-  gap: 90px;
+  gap: 95px;
 }
 
 .input_form {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 18px;
 }
 
 .input_label {
@@ -316,11 +316,14 @@ h6 {
 
 input[type=radio] {
   accent-color: #000;
+  height: 17px;
+  width: 17px;
 }
 
 .books_block {
   display: flex;
   width: 100%;
+  margin-top: 19px;
 }
 
 .books_block_season {
@@ -328,30 +331,33 @@ input[type=radio] {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  justify-content: space-between;
+  -moz-column-gap: 260px;
+       column-gap: 260px;
   row-gap: 40px;
+  padding-right: 40px;
 }
 
 .book_item {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 20px;
   position: relative;
-  padding: 15px 175px 15px 20px;
+  padding: 15px 20px 60px 20px;
   border: 1px solid #000;
 }
 
 .book_block_title_block {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
 }
 
 .h5 {
   color: #000;
   font-family: "Forum", sans-serif;
   font-size: 125%;
-  line-height: 200%;
+  line-height: 190%;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -365,7 +371,7 @@ input[type=radio] {
 .book_title_block {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
 }
 
 .h6 {
@@ -389,7 +395,7 @@ input[type=radio] {
 }
 
 .book_description {
-  max-width: 355px;
+  max-width: 357px;
   color: #000;
   font-family: "InterNormal", sans-serif;
   font-size: 93.75%;
@@ -400,6 +406,10 @@ input[type=radio] {
 }
 
 .book_button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  margin-top: -3px;
   width: 75px;
   padding: 9px 27px;
   color: #0c0c0e;
@@ -415,8 +425,8 @@ input[type=radio] {
 
 .book_image_block {
   position: absolute;
-  bottom: 0;
-  right: -40px;
+  bottom: -1px;
+  right: -41px;
 }
 
 .display_none_season {
@@ -465,9 +475,14 @@ input[type=radio] {
 .price_item {
   width: 100%;
   display: grid;
-  grid-template-columns: 220px auto auto;
-  column-gap: 60px;
+  grid-template-columns: 230px auto auto;
+  -moz-column-gap: 58px;
+       column-gap: 58px;
   align-items: center;
+}
+
+.coffee_tea_item {
+  grid-template-columns: 200px auto auto;
 }
 
 .price_name {
@@ -531,9 +546,15 @@ input[type=radio] {
   text-transform: capitalize;
 }
 
+.contacts_tel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contacts_tel_item {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 
 .tel_text {
@@ -575,7 +596,7 @@ input[type=radio] {
 
 .staff_item {
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 
 .staff_text {
@@ -603,13 +624,14 @@ input[type=radio] {
 }
 
 .map_image {
-  height: 100%;
+  height: 412px;
+  width: 684px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 42px;
   padding-top: 20px;
   padding-bottom: 41px;
 }
@@ -622,7 +644,7 @@ input[type=radio] {
 .find_card_block {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 33px;
 }
 
 .find_card_title {
@@ -639,7 +661,7 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 20px 40px 20px;
+  padding: 17px 17px 27px 17px;
   border: 3px solid #bb945f;
   align-items: center;
 }
@@ -666,12 +688,33 @@ input[type=radio] {
   width: 520px;
   height: 66px;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.input_name::-moz-placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", sans-serif;
+  font-size: 225%;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.6px;
+}
+
+.input_name:-ms-input-placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", sans-serif;
+  font-size: 225%;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.6px;
 }
 
 .input_name::placeholder {
   color: #8e8e8e;
   font-family: "Forum", sans-serif;
-  font-size: 187.5%;
+  font-size: 225%;
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.6px;
@@ -680,15 +723,34 @@ input[type=radio] {
 .input_card {
   margin-top: 5px;
   border-radius: 10px;
-  height: 66px;
   width: 520px;
   padding-left: 20px;
+  padding-top: 10px;
+  height: 66px;
+}
+
+.input_card::-moz-placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", sans-serif;
+  font-size: 225%;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.6px;
+}
+
+.input_card:-ms-input-placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", sans-serif;
+  font-size: 225%;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.6px;
 }
 
 .input_card::placeholder {
   color: #8e8e8e;
   font-family: "Forum", sans-serif;
-  font-size: 187.5%;
+  font-size: 225%;
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.6px;
@@ -701,7 +763,7 @@ input[type=radio] {
   font-size: 125%;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 10px 40px;
+  padding: 9px 39px;
   max-width: 250px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
@@ -744,11 +806,11 @@ input[type=radio] {
   color: #0c0c0e;
   text-align: center;
   font-family: "InterBold", sans-serif;
-  font-size: 62.5;
+  font-size: 62.5%;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 1px;
-  padding: 10px 15px;
+  padding: 8px 14px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
@@ -758,11 +820,11 @@ input[type=radio] {
   color: #0c0c0e;
   text-align: center;
   font-family: "InterBold", sans-serif;
-  font-size: 62.5;
+  font-size: 62.5%;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 1px;
-  padding: 10px 15px;
+  padding: 9px 19px;
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
@@ -776,7 +838,7 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 30px;
+  gap: 29px;
 }
 
 .common_links_block {
@@ -787,6 +849,7 @@ input[type=radio] {
   line-height: 133.333%;
   display: flex;
   flex-direction: column;
+  gap: 11px;
 }
 
 .adress_links_block {
@@ -797,6 +860,11 @@ input[type=radio] {
 
 .adress_link_item {
   max-width: 230px;
+}
+
+.time_link_item {
+  max-width: 150px;
+  text-align: end;
 }
 
 .adress_link {
@@ -815,7 +883,7 @@ input[type=radio] {
 
 .media_list {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 .school_links_block {
@@ -824,6 +892,7 @@ input[type=radio] {
   padding-bottom: 44px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .school_link_item {
@@ -833,6 +902,10 @@ input[type=radio] {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 2px;
+}
+
+.school {
+  padding-left: 75px;
 }
 
 .school_link {
