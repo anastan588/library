@@ -766,4 +766,79 @@ input[type=radio] {
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
+}
+
+.footer {
+  background-color: #0c0c0e;
+}
+
+.footer_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 30px;
+}
+
+.common_links_block {
+  color: #ffffff;
+  font-family: "InterNormal", sans-serif;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 133.333%;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress_links_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adress_link_item {
+  max-width: 230px;
+}
+
+.adress_link {
+  color: #ffffff;
+}
+
+.media_links_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media_link_item {
+  max-width: 230px;
+}
+
+.media_list {
+  display: flex;
+  gap: 15px;
+}
+
+.school_links_block {
+  border-top: 1px solid #ffffff;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.school_link_item {
+  color: #ffffff;
+  font-family: "InterNormal", sans-serif;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+
+.school_link {
+  color: #ffffff;
+}
+
+.github_link {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
