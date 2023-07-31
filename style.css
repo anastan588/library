@@ -26,6 +26,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -163,13 +165,24 @@ h6 {
   gap: 30.5px;
 }
 
+.menu_item {
+  transition: all 0.5s ease;
+}
+
 .menu_link {
+  display: block;
   color: #ffffff;
   font-family: "InterNormal", sans-serif;
   font-size: 125%;
   font-style: normal;
   font-weight: 400;
   line-height: 250%;
+  transition: all 0.5s ease;
+}
+
+.menu_link:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
 .main {
@@ -191,7 +204,8 @@ h6 {
   padding: 35px 40px;
 }
 
-.h2 {
+.welcome_title {
+  display: flex;
   max-width: 520px;
   color: #ffffff;
   text-align: center;
@@ -208,7 +222,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   gap: 20px;
 }
 
@@ -219,7 +233,7 @@ h6 {
   align-items: center;
 }
 
-.h3 {
+.h2 {
   color: #0c0c0e;
   font-family: "Forum", sans-serif;
   font-size: 250%;
@@ -259,7 +273,17 @@ h6 {
 
 .slider_dots {
   display: flex;
-  gap: 10px;
+  margin-top: -5px;
+}
+
+.submit_area_dot {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .dot {
@@ -271,6 +295,15 @@ h6 {
 
 .active_dot {
   background-color: #bb945f;
+}
+
+.not_active_dot {
+  transition: all 0.5s ease;
+}
+
+.not_active_dot:hover {
+  cursor: pointer;
+  border: 5px outset #bb945f;
 }
 
 .favourites_block {
@@ -307,6 +340,14 @@ h6 {
   gap: 18px;
 }
 
+.input {
+  cursor: pointer;
+}
+
+.input:hover {
+  opacity: 0.5;
+}
+
 .input_label {
   color: #000;
   font-family: "InterNormal", sans-serif;
@@ -331,8 +372,7 @@ input[type=radio] {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  -moz-column-gap: 260px;
-       column-gap: 260px;
+  column-gap: 260px;
   row-gap: 40px;
   padding-right: 40px;
 }
@@ -421,6 +461,35 @@ input[type=radio] {
   letter-spacing: 1px;
   background-color: #ffffff;
   border: 1px solid #0c0c0e;
+  transition: all 0.5s ease;
+}
+
+.own_button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  margin-top: -3px;
+  width: 75px;
+  padding: 9px 27px;
+  color: #bb945f;
+  text-align: center;
+  font-family: "InterBold", sans-serif;
+  font-size: 62.5%;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1px;
+  background-color: #ffffff;
+  border: 1px solid #bb945f;
+}
+
+.own_button:disabled {
+  cursor: not-allowed;
+  background-color: #ffffff;
+}
+
+.book_button:hover {
+  background-color: #bb945f;
+  border: 1px solid #bb945f;
 }
 
 .book_image_block {
@@ -462,6 +531,15 @@ input[type=radio] {
   gap: 40px;
 }
 
+.h3 {
+  font-family: "Forum", sans-serif;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
 .prices_title {
   color: #bb945f;
 }
@@ -476,8 +554,7 @@ input[type=radio] {
   width: 100%;
   display: grid;
   grid-template-columns: 230px auto auto;
-  -moz-column-gap: 58px;
-       column-gap: 58px;
+  column-gap: 58px;
   align-items: center;
 }
 
@@ -609,7 +686,7 @@ input[type=radio] {
   text-transform: capitalize;
 }
 
-.staff_person {
+.mail_link {
   color: #000;
   font-family: "InterBold", sans-serif;
   font-size: 125%;
@@ -693,24 +770,6 @@ input[type=radio] {
   padding-top: 10px;
 }
 
-.input_name::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_name:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
 .input_name::placeholder {
   color: #8e8e8e;
   font-family: "Forum", sans-serif;
@@ -727,24 +786,6 @@ input[type=radio] {
   padding-left: 20px;
   padding-top: 10px;
   height: 66px;
-}
-
-.input_card::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_card:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
 }
 
 .input_card::placeholder {
@@ -768,6 +809,12 @@ input[type=radio] {
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.input_button:hover {
+  background-color: #bb945f;
+  border: 1px solid #bb945f;
 }
 
 .get_reader_block {
@@ -814,6 +861,7 @@ input[type=radio] {
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
+  transition: all 0.5s ease;
 }
 
 .button_log {
@@ -828,6 +876,17 @@ input[type=radio] {
   border-radius: 2px;
   border: 1px solid #0c0c0e;
   background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.button_sign:hover {
+  background-color: #bb945f;
+  border: 1px solid #bb945f;
+}
+
+.button_log:hover {
+  background-color: #bb945f;
+  border: 1px solid #bb945f;
 }
 
 .footer {
@@ -871,6 +930,11 @@ input[type=radio] {
   color: #ffffff;
 }
 
+.adress_link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .media_links_block {
   display: flex;
   justify-content: space-between;
@@ -884,6 +948,15 @@ input[type=radio] {
 .media_list {
   display: flex;
   gap: 16px;
+}
+
+.media_image {
+  transition: all 0.5s ease;
+}
+
+.media_image:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .school_links_block {
@@ -902,10 +975,25 @@ input[type=radio] {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+
+.school_link_item:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .school {
   padding-left: 75px;
+}
+
+.year {
+  color: #ffffff;
+  font-family: "InterNormal", sans-serif;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
 }
 
 .school_link {
