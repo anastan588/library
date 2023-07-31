@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Forum';
-  src: url('./assets/fonts/Forum-Regular.ttf') format('truetype');
+  font-family: "Forum";
+  src: url("./assets/fonts/Forum-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'InterNormal';
-  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-family: "InterNormal";
+  src: url("./assets/fonts/Inter-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'InterBold';
-  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-family: "InterBold";
+  src: url("./assets/fonts/Inter-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
@@ -121,9 +121,9 @@ h6 {
 /*Normalize*/
 
 /*mixins*/
-$font_inter_regular: 'InterNormal', sans-serif;
-$font_inter_bold: 'InterBold', sans-serif;
-$font_forum_bold: 'Forum', sans-serif;
+$font_inter_regular: "InterNormal", sans-serif;
+$font_inter_bold: "InterBold", sans-serif;
+$font_forum_bold: "Forum", sans-serif;
 $background_color_header: #0c0c0e;
 $background_color_welcome: #0c0c0e;
 $background_color_footer: #0c0c0e;
@@ -190,14 +190,22 @@ $border_color_input: #bb945f;
   gap: 30.5px;
 }
 .menu_item {
+  transition: all 0.5s ease;
 }
+
 .menu_link {
+  display: block;
   color: $color_text1;
   font-family: $font_inter_regular;
   font-size: 125%;
   font-style: normal;
   font-weight: 400;
   line-height: 250%;
+  transition: all 0.5s ease;
+}
+.menu_link:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 .log_in_block {
 }
@@ -212,7 +220,7 @@ $border_color_input: #bb945f;
   padding-top: 220px;
   padding-bottom: 168px;
   display: flex;
-  background-image: url('./assets/images/welcome.jpg');
+  background-image: url("./assets/images/welcome.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-left: 0px;
@@ -221,7 +229,9 @@ $border_color_input: #bb945f;
   background-color: $background_color_welcome;
   padding: 35px 40px;
 }
-.h2 {
+
+.welcome_title {
+  display: flex;
   max-width: 520px;
   color: $color_text1;
   text-align: center;
@@ -239,7 +249,7 @@ $border_color_input: #bb945f;
   flex-direction: column;
   align-items: center;
   padding-top: 12px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   gap: 20px;
 }
 .title_block {
@@ -248,7 +258,7 @@ $border_color_input: #bb945f;
   gap: 20px;
   align-items: center;
 }
-.h3 {
+.h2 {
   color: $color_text2;
   font-family: $font_forum_bold;
   font-size: 250%;
@@ -292,8 +302,18 @@ $border_color_input: #bb945f;
 
 .slider_dots {
   display: flex;
-  gap: 10px;
+  margin-top: -5px;
 }
+.submit_area_dot {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 .dot {
   height: 16px;
   width: 16px;
@@ -302,6 +322,15 @@ $border_color_input: #bb945f;
 }
 .active_dot {
   background-color: $background_color_dot_light;
+}
+
+.not_active_dot {
+  transition: all 0.5s ease;
+}
+
+.not_active_dot:hover {
+  cursor: pointer;
+  border: 5px outset $background_color_prices_line;
 }
 .favourites {
 }
@@ -325,7 +354,7 @@ $border_color_input: #bb945f;
   font-size: 125%;
   line-height: 100%;
 }
-.input_title_favourites{
+.input_title_favourites {
 }
 .input_forms_block {
   display: flex;
@@ -338,6 +367,10 @@ $border_color_input: #bb945f;
 }
 
 .input {
+  cursor: pointer;
+}
+.input:hover {
+  opacity: 0.5;
 }
 
 .input_label {
@@ -346,7 +379,7 @@ $border_color_input: #bb945f;
   font-size: 125%;
   line-height: 100%;
 }
-input[type='radio'] {
+input[type="radio"] {
   accent-color: $color_text3;
   height: 17px;
   width: 17px;
@@ -451,7 +484,36 @@ input[type='radio'] {
   letter-spacing: 1px;
   background-color: $background_color_buttons_books;
   border: 1px solid $border_color_buttons;
+  transition: all 0.5s ease;
 }
+.own_button {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  margin-top: -3px;
+  width: 75px;
+  padding: 9px 27px;
+  color: $color_text4;
+  text-align: center;
+  font-family: $font_inter_bold;
+  font-size: 62.5%;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1px;
+  background-color: $background_color_buttons_books;
+  border: 1px solid $color_text4;
+}
+
+.own_button:disabled {
+  cursor: not-allowed;
+  background-color: $background_color_buttons_books;
+}
+
+.book_button:hover {
+  background-color: $background_color_books_line;
+  border: 1px solid $background_color_books_line;
+}
+
 .book_image_block {
   position: absolute;
   bottom: -1px;
@@ -505,7 +567,14 @@ input[type='radio'] {
   flex-direction: column;
   gap: 40px;
 }
-
+.h3 {
+  font-family: $font_forum_bold;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
 .prices_title {
   color: $color_text4;
 }
@@ -619,6 +688,7 @@ input[type='radio'] {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+
 .contacts_staff {
   display: flex;
   flex-direction: column;
@@ -647,6 +717,8 @@ input[type='radio'] {
   text-transform: capitalize;
 }
 .staff_person {
+}
+.mail_link {
   color: $color_text3;
   font-family: $font_inter_bold;
   font-size: 125%;
@@ -763,6 +835,11 @@ input[type='radio'] {
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
   background-color: $background_color_buttons_books;
+  transition: all 0.5s ease;
+}
+.input_button:hover {
+  background-color: $background_color_books_line;
+  border: 1px solid $background_color_books_line;
 }
 .get_reader_block {
   display: flex;
@@ -804,6 +881,7 @@ input[type='radio'] {
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
   background-color: $background_color_buttons_books;
+  transition: all 0.5s ease;
 }
 .button_log {
   color: $color_text2;
@@ -817,6 +895,15 @@ input[type='radio'] {
   border-radius: 2px;
   border: 1px solid $border_color_buttons;
   background-color: $background_color_buttons_books;
+  transition: all 0.5s ease;
+}
+.button_sign:hover {
+  background-color: $background_color_books_line;
+  border: 1px solid $background_color_books_line;
+}
+.button_log:hover {
+  background-color: $background_color_books_line;
+  border: 1px solid $background_color_books_line;
 }
 .footer {
   background-color: $background_color_footer;
@@ -826,17 +913,17 @@ input[type='radio'] {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 29px
+  gap: 29px;
 }
 .common_links_block {
   color: $color_text1;
-font-family: $font_inter_regular;
-font-size: 93.75%;
-font-weight: 400;
-line-height: 133.333%;
-display: flex;
-flex-direction: column;
-gap: 11px;
+  font-family: $font_inter_regular;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 133.333%;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
 }
 .adress_links_block {
   display: flex;
@@ -849,11 +936,17 @@ gap: 11px;
 
 .time_link_item {
   max-width: 150px;
- text-align: end;
+  text-align: end;
 }
 .adress_link {
   color: $color_text1;
 }
+
+.adress_link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .media_links_block {
   display: flex;
   justify-content: space-between;
@@ -870,7 +963,13 @@ gap: 11px;
 }
 .media_link {
 }
+
 .media_image {
+  transition: all 0.5s ease;
+}
+.media_image:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .school_links_block {
   border-top: 1px solid $background_color_buttons_books;
@@ -887,12 +986,23 @@ gap: 11px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
 
+.school_link_item:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 .school {
-    padding-left: 75px;
+  padding-left: 75px;
 }
 .year {
+  color: $color_text1;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
 }
 .school_link {
   color: $color_text1;
