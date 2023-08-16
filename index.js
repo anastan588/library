@@ -27,8 +27,8 @@ function openOrCloseBurger(event) {
     burgerLine[2].style.rotate = '-45deg';
     burgerLine[0].style.position = 'absolute';
     burgerLine[2].style.position = 'absolute';
-    burgerLine[0].style.bottom = '14px';
-    burgerLine[2].style.top = '14px';
+    burgerLine[0].style.bottom = '11px';
+    burgerLine[2].style.top = '11px';
   } else {
     menu.classList.toggle("burger-open");
     overlay.style.display = "none";
