@@ -185,16 +185,15 @@ h6 {
   .burger {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
     position: relative;
     z-index: 4;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 22.5px;
   }
 }
 .burger .burger-item {
-  width: 30px;
+  width: 45px;
   height: 2px;
   background-color: #ffffff;
 }
@@ -211,26 +210,6 @@ h6 {
   transition: all 1s ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .menu {
-    align-items: flex-start;
-    position: absolute;
-    right: -100%;
-    max-width: 640px;
-    height: 100vh;
-    top: 0;
-    padding-top: 30vh;
-    padding-left: 38px;
-    padding-right: 38px;
-    z-index: 3;
-    background-color: rgba(41, 41, 41, 0.7);
-  }
-  .menu_list {
-    flex-direction: column;
-    align-items: center;
-    gap: 30.5px;
-  }
-}
 .menu_list {
   display: flex;
   gap: 30.5px;
@@ -254,6 +233,33 @@ h6 {
 .menu_link:hover {
   transform: scale(1.05);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    align-items: flex-start;
+    position: absolute;
+    right: -100%;
+    width: 332px;
+    max-height: 570px;
+    height: 100vh;
+    top: 0;
+    padding-top: 100px;
+    padding-left: 107px;
+    padding-right: 107px;
+    padding-bottom: 100px;
+    z-index: 3;
+    background-color: #0c0c0e;
+  }
+  .menu_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.log_in_block {
+  position: relative;
+  z-index: 3;
 }
 
 .main {
@@ -339,6 +345,27 @@ h6 {
 
 .slider_container {
   display: flex;
+}
+
+.arrow {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider_container {
+    gap: 58px;
+  }
+  .arrow {
+    display: block;
+    margin-top: 46.7%;
+    transition: all 0.5s ease;
+  }
+  .arrow:hover {
+    cursor: pointer;
+  }
+}
+.container_image {
+  display: flex;
   gap: 25px;
 }
 
@@ -352,6 +379,17 @@ h6 {
   height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .image2 {
+    display: none;
+  }
+  .image3 {
+    display: none;
+  }
+  .about_slider {
+    gap: 25px;
+  }
+}
 .slider_dots {
   display: flex;
   margin-top: -5px;
@@ -374,6 +412,30 @@ h6 {
   border-radius: 50%;
 }
 
+.dot4 {
+  display: none;
+}
+
+.dot5 {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .dot4 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dot5 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .active_dot {
   background-color: #bb945f;
 }
@@ -479,7 +541,6 @@ input[type=radio] {
   flex-direction: column;
   position: relative;
   gap: 20px;
-  position: relative;
   padding: 15px 20px 60px 20px;
   border: 1px solid #000;
 }
@@ -594,6 +655,24 @@ input[type=radio] {
   border: 1px solid #bb945f;
 }
 
+@media screen and (max-width: 1024px) {
+  .book_button {
+    position: static;
+  }
+  .own_button {
+    position: static;
+  }
+  .book_item {
+    gap: 20px;
+    padding: 15px 170px 13px 20px;
+  }
+  .button_cackle {
+    margin-top: 37px;
+  }
+  .button_irving {
+    margin-top: 77px;
+  }
+}
 .book_image_block {
   position: absolute;
   bottom: -1px;
@@ -622,6 +701,11 @@ input[type=radio] {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 1024px) {
+  .coffeeshop_text {
+    letter-spacing: 1.85px;
+  }
+}
 .coffee_shop_container {
   display: flex;
   justify-content: space-between;
@@ -704,6 +788,11 @@ input[type=radio] {
   justify-content: flex-end;
 }
 
+.desserts_name_cakes_title {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media screen and (max-width: 1250px) {
   .coffeshop_prices_block {
     max-width: 460px;
@@ -713,6 +802,26 @@ input[type=radio] {
   }
   .price_item {
     grid-template-columns: 220px auto auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .price_item {
+    grid-template-columns: 230px auto auto;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .price_amount {
+    padding-left: 12px;
+  }
+  .desserts_cakes {
+    max-width: 570px;
+  }
+  .dessert_item {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+  .desserts_name_cakes {
+    padding-right: 10px;
   }
 }
 .contacts_block {
@@ -838,14 +947,18 @@ input[type=radio] {
     justify-items: flex-start;
     gap: 100px;
   }
+  .map_image {
+    height: 414px;
+    width: 696px;
+  }
   .map {
     align-self: center;
   }
 }
 @media screen and (max-width: 1150px) {
   .map_image {
-    height: 300px;
-    width: 500px;
+    height: 414px;
+    width: 696px;
   }
 }
 .card {
@@ -856,6 +969,11 @@ input[type=radio] {
   padding-bottom: 41px;
 }
 
+@media screen and (max-width: 1024px) {
+  .card {
+    padding-top: 18px;
+  }
+}
 .find_container {
   display: flex;
   justify-content: space-between;
@@ -1023,6 +1141,14 @@ input[type=radio] {
   max-width: 456px;
 }
 
+@media screen and (max-width: 1024px) {
+  .reader_text {
+    max-width: 600px;
+  }
+  .get_reader_block {
+    gap: 41px;
+  }
+}
 .reader_buttons_block {
   display: flex;
   gap: 20px;
@@ -1198,4 +1324,14 @@ input[type=radio] {
 
 .github_link {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .school {
+    padding-left: 17px;
+  }
+  .media_list {
+    display: flex;
+    gap: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

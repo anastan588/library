@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./assets/icons/apple-touch-icon.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/icons/favicon-32x32.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="./assets/icons/favicon-16x16.png"
-    >
+    />
     <title>Library</title>
   </head>
   <body class="body">
@@ -31,11 +31,6 @@
         <div class="container header_block">
           <h1 class="h1 header_title">Brooklyn Public Library</h1>
           <div class="header_navigation">
-            <div class="burger">
-              <div class="burger-item"></div>
-              <div class="burger-item"></div>
-              <div class="burger-item"></div>
-            </div>
             <nav class="menu">
               <ul class="menu_list">
                 <li class="menu_item">
@@ -60,7 +55,12 @@
                 src="./assets/icons/login.svg"
                 alt="login"
                 class="log_in_image"
-              >
+              />
+            </div>
+            <div class="burger">
+              <div class="burger-item"></div>
+              <div class="burger-item"></div>
+              <div class="burger-item"></div>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
           <div class="container welcome_block">
             <div class="welcome_title_block">
               <h3 class="welcome_title">
-                Welcome<br>
+                Welcome<br />
                 to the Brooklyn Library
               </h3>
             </div>
@@ -88,50 +88,72 @@
             </div>
             <div class="about_slider">
               <div class="slider_container">
-                <div class="slider_image_block">
+                <div class="arrow">
                   <img
-                    src="./assets/images/about1.jpg"
-                    alt="about1"
-                    class="slider_image"
-                  >
+                    src="./assets/icons/leftarrow.svg"
+                    alt="arrow"
+                    class="arrow_image"
+                  />
                 </div>
-                <div class="slider_image_block">
-                  <img
-                    src="./assets/images/about2.jpg"
-                    alt="about2"
-                    class="slider_image"
-                  >
+                <div class="container_image">
+                  <div class="slider_image_block image1">
+                    <img
+                      src="./assets/images/about1.jpg"
+                      alt="about1"
+                      class="slider_image"
+                    />
+                  </div>
+                  <div class="slider_image_block image2">
+                    <img
+                      src="./assets/images/about2.jpg"
+                      alt="about2"
+                      class="slider_image"
+                    />
+                  </div>
+                  <div class="slider_image_block image3">
+                    <img
+                      src="./assets/images/about3.jpg"
+                      alt="about3"
+                      class="slider_image"
+                    />
+                  </div>
+                  <div class="slider_image_block display_none image4">
+                    <img
+                      src="./assets/images/about4.jpg"
+                      alt="about4"
+                      class="slider_image"
+                    />
+                  </div>
+                  <div class="slider_image_block display_none image5">
+                    <img
+                      src="./assets/images/about5.jpg"
+                      alt="about5"
+                      class="slider_image"
+                    />
+                  </div>
                 </div>
-                <div class="slider_image_block">
+                <div class="arrow">
                   <img
-                    src="./assets/images/about3.jpg"
-                    alt="about3"
-                    class="slider_image"
-                  >
-                </div>
-                <div class="slider_image_block display_none">
-                  <img
-                    src="./assets/images/about4.jpg"
-                    alt="about4"
-                    class="slider_image"
-                  >
-                </div>
-                <div class="slider_image_block display_none">
-                  <img
-                    src="./assets/images/about5.jpg"
-                    alt="about5"
-                    class="slider_image"
-                  >
+                    src="./assets/icons/rightarrow.svg"
+                    alt="arrow"
+                    class="arrow_image"
+                  />
                 </div>
               </div>
               <div class="slider_dots">
-                <div class="submit_area_dot">
-                  <div class="dot active_dot"></div>
+                <div class="submit_area_dot dot1">
+                  <div class="dot active_dot "></div>
                 </div>
-                <div class="submit_area_dot not_active_dot">
+                <div class="submit_area_dot not_active_dot dot2">
                   <div class="dot"></div>
                 </div>
-                <div class="submit_area_dot not_active_dot">
+                <div class="submit_area_dot not_active_dot dot3">
+                  <div class="dot"></div>
+                </div>
+                <div class="submit_area_dot not_active_dot dot4">
+                  <div class="dot"></div>
+                </div>
+                <div class="submit_area_dot not_active_dot dot5">
                   <div class="dot"></div>
                 </div>
               </div>
@@ -156,7 +178,7 @@
                     id="winter"
                     type="radio"
                     name="question"
-                  >
+                  />
                   <label class="input_label" for="winter">Winter</label>
                 </form>
                 <form class="input_form">
@@ -165,7 +187,7 @@
                     id="spring"
                     type="radio"
                     name="question"
-                  >
+                  />
                   <label class="input_label" for="spring">Spring</label>
                 </form>
                 <form class="input_form">
@@ -174,7 +196,7 @@
                     id="summer"
                     type="radio"
                     name="question"
-                  >
+                  />
                   <label class="input_label" for="summer">Summer</label>
                 </form>
                 <form class="input_form">
@@ -183,7 +205,7 @@
                     id="autumn"
                     type="radio"
                     name="question"
-                  >
+                  />
                   <label class="input_label" for="autumn">Autumn</label>
                 </form>
               </div>
@@ -212,7 +234,7 @@
                       src="./assets/images/bookwinter1.jpg"
                       alt="bookwinter1"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item winter_book">
@@ -230,13 +252,13 @@
                     woman recovering from a breakup moves to a quaint town in
                     upstate New York and befriends a beautiful witch.
                   </p>
-                  <button class="book_button">Buy</button>
+                  <button class="book_button button_cackle">Buy</button>
                   <div class="book_image_block">
                     <img
                       src="./assets/images/bookwinter2.jpg"
                       alt="bookwinter2"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item winter_book">
@@ -264,7 +286,7 @@
                       src="./assets/images/bookwinter3.jpg"
                       alt="bookwinter3"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item winter_book">
@@ -281,13 +303,13 @@
                     (and her family) exploring how the Windsors have evolved and
                     thrived as the modern world has changed around them.
                   </p>
-                  <button disabled class="own_button">Own</button>
+                  <button disabled class="own_button button_irving">Own</button>
                   <div class="book_image_block">
                     <img
                       src="./assets/images/bookwinter4.jpg"
                       alt="bookwinter4"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
               </div>
@@ -312,7 +334,7 @@
                       src="./assets/images/bookspring1.jpg"
                       alt="bookspring1"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item spring_book">
@@ -337,7 +359,7 @@
                       src="./assets/images/bookspring2.jpg"
                       alt="bookspring2"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item spring_book">
@@ -360,7 +382,7 @@
                       src="./assets/images/bookspring3.jpg"
                       alt="bookspring3"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item spring_book">
@@ -384,7 +406,7 @@
                       src="./assets/images/bookspring4.jpg"
                       alt="bookspring4"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
               </div>
@@ -412,7 +434,7 @@
                       src="./assets/images/booksummer1.jpg"
                       alt="booksummer1"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item summer_book">
@@ -437,7 +459,7 @@
                       src="./assets/images/booksummer2.jpg"
                       alt="booksummer2"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item summer_book">
@@ -461,7 +483,7 @@
                       src="./assets/images/booksummer3.jpg"
                       alt="booksummer3"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item summer_book">
@@ -486,7 +508,7 @@
                       src="./assets/images/booksummer4.jpg"
                       alt="booksummer4"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
               </div>
@@ -513,7 +535,7 @@
                       src="./assets/images/bookautumn1.jpg"
                       alt="bookautumn1"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item autumn_book">
@@ -537,7 +559,7 @@
                       src="./assets/images/bookautumn2.jpg"
                       alt="bookautumn2"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item summer_book">
@@ -562,7 +584,7 @@
                       src="./assets/images/bookautumn3.jpg"
                       alt="bookautumn3"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
                 <div class="book_item summer_book">
@@ -585,7 +607,7 @@
                       src="./assets/images/bookautumn4.jpg"
                       alt="bookautumn4"
                       class="book_image"
-                    >
+                    />
                   </div>
                 </div>
               </div>
@@ -641,44 +663,44 @@
                 </div>
               </div>
               <div class="coffeshop_prices_block desserts_cakes">
-                <h3 class="h3 prices_title desserts_name_cakes">
+                <h3 class="h3 prices_title desserts_name_cakes_title">
                   Desserts & Cakes
                 </h3>
                 <div class="prices_menu">
-                  <div class="price_item">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">
                       Forest Gateau
                     </div>
                     <div class="price_line"></div>
                     <div class="price_amount">$16</div>
                   </div>
-                  <div class="price_item">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">Blue Moon</div>
                     <div class="price_line"></div>
                     <div class="price_amount">$16</div>
                   </div>
-                  <div class="price_item">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">
                       Truffle Cake
                     </div>
                     <div class="price_line"></div>
                     <div class="price_amount">$15</div>
                   </div>
-                  <div class="price_item">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">
                       Chocolate Cake
                     </div>
                     <div class="price_line"></div>
                     <div class="price_amount">$18</div>
                   </div>
-                  <div class="price_item">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">
                       Poet’s Dream Cake
                     </div>
                     <div class="price_line"></div>
                     <div class="price_amount">$16</div>
                   </div>
-                  <div class="price_item price_desserts">
+                  <div class="price_item dessert_item">
                     <div class="price_name desserts_name_cakes">
                       Pineapple Cake
                     </div>
@@ -762,12 +784,12 @@
                       placeholder="Reader's name "
                       type="text"
                       class="input_name"
-                    >
+                    />
                     <input
                       placeholder="Card number"
                       type="number"
                       class="input_card"
-                    >
+                    />
                   </div>
                   <button class="input_button">Check the card</button>
                 </div>
@@ -799,7 +821,7 @@
                   >286 Cadman Plaza, New York, NY 11238, United States</a
                 >
               </p>
-              <p class="time_link_item">Mon - Fri<br>08:00 am - 07:00 pm</p>
+              <p class="time_link_item">Mon - Fri<br />08:00 am - 07:00 pm</p>
             </div>
             <div class="media_links_block">
               <ul class="media_list">
@@ -813,7 +835,7 @@
                       src="./assets/icons/twitter.svg"
                       alt="twitter"
                       class="media_image"
-                    >
+                    />
                   </a>
                 </li>
                 <li class="media_item">
@@ -826,7 +848,7 @@
                       src="./assets/icons/instagram.svg"
                       alt="instagram"
                       class="media_image"
-                    >
+                    />
                   </a>
                 </li>
                 <li class="media_item">
@@ -839,12 +861,12 @@
                       src="./assets/icons/facebook.svg"
                       alt="facebook"
                       class="media_image"
-                    >
+                    />
                   </a>
                 </li>
               </ul>
               <p class="time_link_item">
-                San - Sun<br>
+                Sat - Sun<br />
                 10:00 am - 06:00 pm
               </p>
             </div>
