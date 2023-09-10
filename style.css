@@ -26,6 +26,8 @@
 *,
 *:before,
 *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -122,9 +124,7 @@ h6 {
 .main_container {
   display: flex;
   flex-direction: column;
-  position: relative;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .overlay {
@@ -140,6 +140,8 @@ h6 {
 
 .header {
   background-color: #0c0c0e;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -255,6 +257,7 @@ h6 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    position: relative;
   }
 }
 .log_in_block {
@@ -514,6 +517,13 @@ h6 {
   gap: 95px;
 }
 
+@media screen and (max-width: 768px) {
+  .input_block_favourites {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+  }
+}
 .input_form {
   display: flex;
   align-items: center;
@@ -545,6 +555,7 @@ input[type=radio] {
   display: flex;
   width: 100%;
   margin-top: 19px;
+  position: relative;
 }
 
 .books_block_season {
@@ -552,16 +563,18 @@ input[type=radio] {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  -moz-column-gap: 260px;
-       column-gap: 260px;
+  column-gap: 260px;
   row-gap: 40px;
   padding-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease;
 }
 
 @media screen and (max-width: 1430px) {
   .books_block_season {
-    -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -587,6 +600,14 @@ input[type=radio] {
     padding: 15px 175px 60px 20px;
   }
 }
+.opacity {
+  opacity: 1;
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
 .book_block_title_block {
   display: flex;
   flex-direction: column;
@@ -784,8 +805,7 @@ input[type=radio] {
   width: 100%;
   display: grid;
   grid-template-columns: 230px auto auto;
-  -moz-column-gap: 58px;
-       column-gap: 58px;
+  column-gap: 58px;
   align-items: center;
 }
 
@@ -844,8 +864,7 @@ input[type=radio] {
 @media screen and (max-width: 1024px) {
   .price_item {
     grid-template-columns: 230px auto auto;
-    -moz-column-gap: 25px;
-         column-gap: 25px;
+    column-gap: 25px;
   }
   .price_amount {
     padding-left: 12px;
@@ -854,8 +873,7 @@ input[type=radio] {
     max-width: 570px;
   }
   .dessert_item {
-    -moz-column-gap: 48px;
-         column-gap: 48px;
+    column-gap: 48px;
   }
   .desserts_name_cakes {
     padding-right: 10px;
@@ -1068,24 +1086,6 @@ input[type=radio] {
   padding-top: 10px;
 }
 
-.input_name::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_name:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
 .input_name::placeholder {
   color: #8e8e8e;
   font-family: "Forum", sans-serif;
@@ -1102,24 +1102,6 @@ input[type=radio] {
   padding-left: 20px;
   padding-top: 10px;
   height: 66px;
-}
-
-.input_card::-moz-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
-}
-
-.input_card:-ms-input-placeholder {
-  color: #8e8e8e;
-  font-family: "Forum", sans-serif;
-  font-size: 225%;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.6px;
 }
 
 .input_card::placeholder {

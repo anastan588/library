@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Forum";
-  src: url("./assets/fonts/Forum-Regular.ttf") format("truetype");
+  font-family: 'Forum';
+  src: url('./assets/fonts/Forum-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "InterNormal";
-  src: url("./assets/fonts/Inter-Regular.ttf") format("truetype");
+  font-family: 'InterNormal';
+  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "InterBold";
-  src: url("./assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-family: 'InterBold';
+  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
@@ -121,9 +121,9 @@ h6 {
 /*Normalize*/
 
 /*mixins*/
-$font_inter_regular: "InterNormal", sans-serif;
-$font_inter_bold: "InterBold", sans-serif;
-$font_forum_bold: "Forum", sans-serif;
+$font_inter_regular: 'InterNormal', sans-serif;
+$font_inter_bold: 'InterBold', sans-serif;
+$font_forum_bold: 'Forum', sans-serif;
 $background_color_header: #0c0c0e;
 $background_color_welcome: #0c0c0e;
 $background_color_footer: #0c0c0e;
@@ -153,9 +153,9 @@ $overlay-color: rgba(41, 41, 41, 0.4);
 .main_container {
   display: flex;
   flex-direction: column;
-  position: relative;
+  // position: relative;
   box-sizing: border-box;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .overlay {
@@ -167,10 +167,13 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   height: 100%;
   z-index: 3;
   background-color: rgba(41, 41, 41, 0.4);
+
 }
 
 .header {
   background-color: $background_color_header;
+  overflow: hidden;
+  position: relative;
 }
 .container {
   max-width: 1440px;
@@ -279,6 +282,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    position: relative;
   }
 }
 .log_in_block {
@@ -296,7 +300,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   padding-top: 220px;
   padding-bottom: 168px;
   display: flex;
-  background-image: url("./assets/images/welcome.jpg");
+  background-image: url('./assets/images/welcome.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-left: 0px;
@@ -399,7 +403,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
 }
 .container_image {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   display: flex;
   gap: 25px;
@@ -417,11 +421,11 @@ $overlay-color: rgba(41, 41, 41, 0.4);
 }
 .image4 {
   display: block;
-  }
+}
 
-  .image5 {
-    display: block;
-    }
+.image5 {
+  display: block;
+}
 
 .disabled {
   pointer-events: none;
@@ -444,12 +448,10 @@ $overlay-color: rgba(41, 41, 41, 0.4);
     min-width: 450px;
   }
   .image2 {
-
   }
   .image3 {
-
   }
- 
+
   .about_slider {
     gap: 25px;
   }
@@ -546,6 +548,14 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   display: flex;
   gap: 95px;
 }
+@media screen and (max-width: 768px) {
+  .input_block_favourites {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+  }
+}
+
 .input_form {
   display: flex;
   align-items: center;
@@ -565,7 +575,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   font-size: 125%;
   line-height: 100%;
 }
-input[type="radio"] {
+input[type='radio'] {
   accent-color: $color_text3;
   height: 17px;
   width: 17px;
@@ -574,6 +584,7 @@ input[type="radio"] {
   display: flex;
   width: 100%;
   margin-top: 19px;
+  position: relative;
 }
 .books_block_season {
   width: 100%;
@@ -583,6 +594,10 @@ input[type="radio"] {
   column-gap: 260px;
   row-gap: 40px;
   padding-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease;
 }
 
 @media screen and (max-width: 1430px) {
@@ -617,7 +632,20 @@ input[type="radio"] {
   }
 }
 
+.opacity {
+  opacity: 1;
+}
+.no-opacity {
+  opacity: 0;
+}
+
 .winter_book {
+}
+.spring_book {
+}
+.summer_book {
+}
+.autumn_book {
 }
 .book_block_title_block {
   display: flex;
