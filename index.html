@@ -62,7 +62,7 @@
               <div class="burger-item"></div>
               <div class="burger-item"></div>
             </div>
-          </div>
+          </div> 
         </div>
       </header>
       <main class="main">
@@ -74,6 +74,26 @@
                 to the Brooklyn Library
               </h3>
             </div>
+            <div class="drop_menu register_menu">
+            <div class="title_register">
+              <p class="register_title">Profile</p>
+              <div class="register_line"></div>
+            </div>
+            <div class="register_items">
+              <p class="register_item">Log in</p>
+              <p class="register_item">Register</p>
+            </div>
+          </div>
+          <div class="drop_menu registered_menu">
+            <div class="title_registered">
+              <p class="registered_title">Profile</p>
+              <div class="registered_line"></div>
+            </div>
+            <div class="registered_items">
+              <p class="registered_item">My Profile</p>
+              <p class="registered_item">Log out</p>
+            </div>
+          </div>
           </div>
         </section>
         <section class="about" id="about">
@@ -96,43 +116,43 @@
                   />
                 </div>
                 <div class="container_move">
-                 <div id="image_container" class="container_image">
-                  <div class="slider_image_block image1">
-                    <img
-                      src="./assets/images/about1.jpg"
-                      alt="about1"
-                      class="slider_image"
-                    />
+                  <div id="image_container" class="container_image">
+                    <div class="slider_image_block image1">
+                      <img
+                        src="./assets/images/about1.jpg"
+                        alt="about1"
+                        class="slider_image"
+                      />
+                    </div>
+                    <div class="slider_image_block image2">
+                      <img
+                        src="./assets/images/about2.jpg"
+                        alt="about2"
+                        class="slider_image"
+                      />
+                    </div>
+                    <div class="slider_image_block image3">
+                      <img
+                        src="./assets/images/about3.jpg"
+                        alt="about3"
+                        class="slider_image"
+                      />
+                    </div>
+                    <div class="slider_image_block display_none image4">
+                      <img
+                        src="./assets/images/about4.jpg"
+                        alt="about4"
+                        class="slider_image"
+                      />
+                    </div>
+                    <div class="slider_image_block display_none image5">
+                      <img
+                        src="./assets/images/about5.jpg"
+                        alt="about5"
+                        class="slider_image"
+                      />
+                    </div>
                   </div>
-                  <div class="slider_image_block image2">
-                    <img
-                      src="./assets/images/about2.jpg"
-                      alt="about2"
-                      class="slider_image"
-                    />
-                  </div>
-                  <div class="slider_image_block image3">
-                    <img
-                      src="./assets/images/about3.jpg"
-                      alt="about3"
-                      class="slider_image"
-                    />
-                  </div>
-                  <div class="slider_image_block display_none image4">
-                    <img
-                      src="./assets/images/about4.jpg"
-                      alt="about4"
-                      class="slider_image"
-                    />
-                  </div>
-                  <div class="slider_image_block display_none image5">
-                    <img
-                      src="./assets/images/about5.jpg"
-                      alt="about5"
-                      class="slider_image"
-                    />
-                  </div>
-                </div> 
                 </div>
                 <div class="arrow arrow_right">
                   <img
@@ -305,7 +325,9 @@
                     (and her family) exploring how the Windsors have evolved and
                     thrived as the modern world has changed around them.
                   </p>
-                  <button disabled class="own_button button_irving">Own</button>
+                  <button disabled class="book_button button_irving">
+                    Buy
+                  </button>
                   <div class="book_image_block">
                     <img
                       src="./assets/images/bookwinter4.jpg"
@@ -315,7 +337,10 @@
                   </div>
                 </div>
               </div>
-              <div id="spring" class="spring_block no-opacity books_block_season">
+              <div
+                id="spring"
+                class="spring_block no-opacity books_block_season"
+              >
                 <div class="book_item spring_book">
                   <div class="book_block_title_block">
                     <h5 class="h5 book_block_title">Staff Picks</h5>
@@ -412,7 +437,10 @@
                   </div>
                 </div>
               </div>
-              <div id="summer" class="summer_block no-opacity books_block_season">
+              <div
+                id="summer"
+                class="summer_block no-opacity books_block_season"
+              >
                 <div class="book_item summer_book">
                   <div class="book_block_title_block">
                     <h5 class="h5 book_block_title">Staff Picks</h5>
@@ -514,7 +542,10 @@
                   </div>
                 </div>
               </div>
-              <div id="autumn" class="autumn_block no-opacity books_block_season">
+              <div
+                id="autumn"
+                class="autumn_block no-opacity books_block_season"
+              >
                 <div class="book_item autumn_book">
                   <div class="book_block_title_block">
                     <h5 class="h5 book_block_title">Staff Picks</h5>
@@ -897,5 +928,6 @@
     </div>
     <script type="module" src="burger.js"></script>
     <script type="module" src="slider.js"></script>
+    <script type="module" src="register.js"></script>
   </body>
 </html>

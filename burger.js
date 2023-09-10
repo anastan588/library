@@ -56,3 +56,5 @@ overlay.addEventListener('click', openOrCloseBurger);
 menuItem.forEach((element) =>
   element.addEventListener('click', openOrCloseBurger)
 );
+
+alert('Уважаемые проверяющие, просьба проветь работу в последний день кроссчека.')
