@@ -88,14 +88,15 @@
             </div>
             <div class="about_slider">
               <div class="slider_container">
-                <div class="arrow">
+                <div class="arrow arrow_left disabled">
                   <img
                     src="./assets/icons/leftarrow.svg"
                     alt="arrow"
                     class="arrow_image"
                   />
                 </div>
-                <div class="container_image">
+                <div class="container_move">
+                 <div id="image_container" class="container_image">
                   <div class="slider_image_block image1">
                     <img
                       src="./assets/images/about1.jpg"
@@ -131,8 +132,9 @@
                       class="slider_image"
                     />
                   </div>
+                </div> 
                 </div>
-                <div class="arrow">
+                <div class="arrow arrow_right">
                   <img
                     src="./assets/icons/rightarrow.svg"
                     alt="arrow"
@@ -142,7 +144,7 @@
               </div>
               <div class="slider_dots">
                 <div class="submit_area_dot dot1">
-                  <div class="dot active_dot "></div>
+                  <div class="dot active_dot"></div>
                 </div>
                 <div class="submit_area_dot not_active_dot dot2">
                   <div class="dot"></div>
@@ -893,6 +895,7 @@
         </div>
       </footer>
     </div>
-    <script src="index.js"></script>
+    <script type="module" src="burger.js"></script>
+    <script type="module" src="slider.js"></script>
   </body>
 </html>
