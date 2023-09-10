@@ -138,6 +138,105 @@ h6 {
   background-color: rgba(41, 41, 41, 0.4);
 }
 
+.login_form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px 25px;
+}
+
+.login_title {
+  color: #000;
+  text-align: center;
+  font-family: "Forum", sans-serif;
+  font-size: 125%;
+  line-height: 125%;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.input_blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input_block_login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input_title_login {
+  color: #000;
+  font-family: "InterNormal", sans-serif;
+  font-size: 93.75%;
+  line-height: 125%;
+  letter-spacing: 0.3px;
+}
+
+.input_email {
+  border: 1px solid #bb945f;
+  width: 200px;
+  height: 20px;
+}
+
+.input_password {
+  border: 1px solid #bb945f;
+  width: 200px;
+  height: 20px;
+}
+
+.button_login {
+  max-width: 80px;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: "InterBold", sans-serif;
+  font-size: 62.5%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 9px 20px;
+  border: 1px solid #0c0c0e;
+  background-color: #ffffff;
+}
+
+.input_links {
+  margin-top: -10px;
+  display: flex;
+  gap: 10px;
+}
+
+.input_account {
+  color: #000;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  font-family: "InterNormal", sans-serif;
+  font-size: 62.5%;
+}
+
+.input_link_to_register {
+  color: #0c0c0e;
+  font-family: "InterBold", sans-serif;
+  font-size: 62.5%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.close_login {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 .header {
   background-color: #0c0c0e;
   overflow: hidden;
@@ -238,15 +337,19 @@ h6 {
 }
 
 .drop_menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #ffffff;
   gap: 20px;
+  padding: 5px 10px 20px 10px;
   align-items: center;
   position: absolute;
   right: 20px;
   top: -30px;
-  height: 0;
+}
+
+.display_flex {
+  display: flex;
 }
 
 .title_register {
@@ -352,6 +455,7 @@ h6 {
 .log_in_block {
   position: relative;
   z-index: 3;
+  cursor: pointer;
 }
 
 .main {
