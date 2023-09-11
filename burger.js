@@ -6,6 +6,7 @@ let menuItem = document.querySelectorAll('.menu_item');
 let overlay = document.querySelector('.overlay');
 let burgerLine = document.querySelectorAll('.burger-item');
 const header = document.querySelector('.header');
+const registerDropMenu = document.querySelector('.register_menu');
 
 function openOrCloseBurger(event) {
   event.stopPropagation();
@@ -19,7 +20,7 @@ function openOrCloseBurger(event) {
     styleOfOverlay.display === 'none'
   ) {
     overlay.style.display = 'block';
-    menu.classList.toggle('burger-open');
+    menu.classList.add('burger-open');
     menu.style.right = '0%';
     burgerImage.style.transform = 'rotate(90deg)';
     body.style.overflow = 'hidden';
@@ -31,8 +32,9 @@ function openOrCloseBurger(event) {
     burgerLine[0].style.bottom = '11px';
     burgerLine[2].style.top = '11px';
     header.style.overflow = 'visible';
+    registerDropMenu.classList.remove('display_flex');
   } else {
-    menu.classList.toggle('burger-open');
+    menu.classList.remove('burger-open');
     overlay.style.display = 'none';
     menu.style.right = '-100%';
     burgerImage.style.transform = 'rotate(0deg)';

@@ -28,23 +28,103 @@
     <div class="main_container">
       <div class="login_form">
         <p class="login_title">Login</p>
-        <div class="input_blocks">
-           <div class="input_block_login">
-          <p class="input_title_login">E-mail or readers card</p>
-          <input class="input_email" type="email">
-        </div>
-        <div class="input_block_login">
-          <p class="input_title_login">Password</p>
-          <input class="input_password" type="password">
-        </div>
-        </div>
-       
-        <button class="button_login">Log in</button>
+        <form class="login_form_input">
+          <div class="input_blocks">
+            <div class="input_block_login">
+              <p class="input_title_login">E-mail or readers card</p>
+              <input
+                name="email"
+                class="input_email"
+                type="email"
+                minlength="1"
+                pattern="[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                required
+              />
+            </div>
+            <div class="input_block_login">
+              <p class="input_title_login">Password</p>
+              <input
+                name="password"
+                class="input_password"
+                pattern="{8,}"
+                type="password"
+                minlength="8"
+                required
+              />
+            </div>
+          </div>
+          <button class="button_login">Log in</button>
+        </form>
         <div class="input_links">
           <p class="input_account">Don’t have an account?</p>
           <p class="input_link_to_register">Register</p>
         </div>
-        <img src="./assets/icons/close_btn.svg" alt="close" class="close_login">
+        <img
+          src="./assets/icons/close_btn.svg"
+          alt="close"
+          class="close_login"
+        />
+      </div>
+      <div class="reg_form">
+        <p class="reg_title">Register</p>
+        <form class="reg_form_input">
+          <div class="input_blocks_reg">
+            <div class="input_block_reg">
+              <p class="input_title_reg">First name</p>
+              <input
+                name="firstname"
+                class="input_first_name_reg"
+                type="text"
+                minlength="1"
+                pattern="{1,}"
+                required
+              />
+            </div>
+            <div class="input_block_reg">
+              <p class="input_title_reg">Last name</p>
+              <input
+                name="lastname"
+                class="input_last_name_reg"
+                type="text"
+                minlength="1"
+                pattern="{1,}"
+                required
+              />
+            </div>
+            <div class="input_block_reg">
+              <p class="input_title_reg">E-mail</p>
+              <input
+                name="email"
+                class="input_email_reg"
+                type="email"
+                minlength="1"
+                pattern="[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                required
+              />
+            </div>
+            <div class="input_block_reg">
+              <p class="input_title_reg">Password</p>
+              <input
+                name="password"
+                class="input_password_reg"
+                pattern="{8,}"
+                type="password"
+                minlength="8"
+                required
+              />
+            </div>
+          </div>
+          <button class="button_register">Sign up</button>
+        </form>
+        <div class="input_links-reg">
+          <p class="input_account-reg">Already have an account?</p>
+          <p class="input_link_to_login">Login</p>
+        </div>
+        <img
+          src="./assets/icons/close_btn.svg"
+          alt="close"
+          class="close_register"
+        />
       </div>
       <div class="overlay"></div>
       <header class="header">
@@ -76,13 +156,16 @@
                 alt="login"
                 class="log_in_image"
               />
+              <div class="user_icon">
+                <p class="user_icon_text"></p>
+              </div>
             </div>
             <div class="burger">
               <div class="burger-item"></div>
               <div class="burger-item"></div>
               <div class="burger-item"></div>
             </div>
-          </div> 
+          </div>
         </div>
       </header>
       <main class="main">
@@ -95,25 +178,25 @@
               </h3>
             </div>
             <div class="drop_menu register_menu">
-            <div class="title_register">
-              <p class="register_title">Profile</p>
-              <div class="register_line"></div>
+              <div class="title_register">
+                <p class="register_title">Profile</p>
+                <div class="register_line"></div>
+              </div>
+              <div class="register_items">
+                <p class="register_item login_link">Log in</p>
+                <p class="register_item register_link">Register</p>
+              </div>
             </div>
-            <div class="register_items">
-              <p class="register_item login_link">Log in</p>
-              <p class="register_item register_link">Register</p>
+            <div class="drop_menu registered_menu">
+              <div class="title_registered">
+                <p class="registered_title">Profile</p>
+                <div class="registered_line"></div>
+              </div>
+              <div class="registered_items">
+                <p class="registered_item">My Profile</p>
+                <p class="registered_item">Log out</p>
+              </div>
             </div>
-          </div>
-          <div class="drop_menu registered_menu">
-            <div class="title_registered">
-              <p class="registered_title">Profile</p>
-              <div class="registered_line"></div>
-            </div>
-            <div class="registered_items">
-              <p class="registered_item">My Profile</p>
-              <p class="registered_item">Log out</p>
-            </div>
-          </div>
           </div>
         </section>
         <section class="about" id="about">
@@ -948,6 +1031,7 @@
     </div>
     <script type="module" src="burger.js"></script>
     <script type="module" src="slider.js"></script>
+    <script type="module" src="login.js"></script>
     <script type="module" src="register.js"></script>
   </body>
 </html>
