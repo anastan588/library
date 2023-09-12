@@ -573,6 +573,9 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   position: relative;
   z-index: 3;
   cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 28px;
 }
 .log_in_image {
 }
@@ -591,6 +594,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   background-color: $background_color_buttons_books;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 4;
 }
 .user_icon_text {
   color: $background_color_books_line;
@@ -599,7 +603,10 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  
+}
+
+.display-flex {
+  display: flex;
 }
 .main {
   flex: 1 1 auto;
@@ -949,6 +956,7 @@ input[type='radio'] {
 
 .opacity {
   opacity: 1;
+  z-index: 5;
 }
 .no-opacity {
   opacity: 0;
@@ -1036,6 +1044,7 @@ input[type='radio'] {
   background-color: $background_color_buttons_books;
   border: 1px solid $border_color_buttons;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .own_button {
   position: absolute;
@@ -1708,3 +1717,152 @@ input[type='radio'] {
     gap: 15px;
   }
 }
+
+.lib_card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  display: none;
+  flex-direction: column;
+  max-width: 640px;
+}
+.libcard_title {
+  background: $color_text2;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 15px;
+}
+.libcard_text {
+  color: $color_text1;
+  font-family: $font_forum_bold;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.libcard_close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.libcard_allblock {
+  padding: 30px 40px 40px 40px;
+  background-color: $background_color_buttons_books;
+  display: flex;
+  gap: 40px;
+}
+.libcards_inputs_block {
+  display: flex;
+  flex-direction: column;
+}
+.libcards_form {
+  display: flex;
+  flex-direction: column;
+}
+.libcards_allinputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.libcards_input_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.libcards_input_title {
+  color: $color_text3;
+  font-family: $font_inter_regular;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.3px;
+}
+.libcards_card_number {
+  width: 200px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.inputs_expcode {
+  display: flex;
+  gap: 10px;
+}
+.libcards_exp_code {
+  width: 45px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.libcards_cvc {
+  width: 45px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.cardholder {
+  margin-top: 10px;
+}
+.libcards_holdername {
+  width: 200px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.libcards_postalcode {
+  width: 200px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.libcards_city {
+  width: 200px;
+  height: 20px;
+  border: 1px solid $background_color_books_line;
+}
+.buttons_block_libcards {
+  margin-top: 10px;
+  display: flex;
+  gap: 25px;
+}
+.libcards_button_buy {
+  color: $color_text2;
+  text-align: center;
+  font-family: $font_inter_bold;
+  font-size: 62.5%;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 9px 27px;
+  border-radius: 2px;
+  border: 1px solid $border_color_buttons;
+  background-color: $background_color_buttons_books;
+}
+.libcards_price {
+  align-self: flex-end;
+  color: $color_text2;
+  font-family: $font_inter_bold;
+  font-size: 125%;
+  font-weight: 700;
+  line-height: 125%; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.libcards_text {
+  color: #8e8e8e;
+  font-family: $font_inter_regular;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 125%; /* 133.333% */
+  letter-spacing: 2px;
+  max-width: 330px;
+}
+
+.dispflex {
+ display: flex;
+}
+ .dispnone {
+  display: none;
+ }

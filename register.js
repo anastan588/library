@@ -21,7 +21,6 @@ const userLoggedIcon = document.querySelector('.user_icon');
 const userLoggedText = document.querySelector('.user_icon_text');
 
 function openRegisterMenu(event) {
-  //   event.stopPropagetion();
   const styleOfOverlay = getComputedStyle(overlay);
   if (styleOfOverlay.display === 'none') {
     overlay.style.display = 'block';
@@ -35,15 +34,15 @@ function openRegisterMenu(event) {
 }
 
 function closeRegisterMenu(event) {
-  event.stopPropagetion();
   if (registerDropMenu.classList.contains('display_flex')) {
-    registerDropMenu.classList.toggle('display_flex');
+    registerDropMenu.classList.remove('display_flex');
   }
-  registerForm.classList.toggle('display_flex');
+  registerForm.classList.remove('display_flex');
   overlay.style.display = 'none';
 }
 
-function registerUser() {
+function registerUser(event) {
+  event.preventDefault();
   const User = {
     firstname: `${registerFirstName.value}`,
     lastname: `${registerLastName.value}`,
@@ -52,17 +51,21 @@ function registerUser() {
   };
 
   userLoggedText.innerHTML = `${User.firstname[0]}${User.lastname[0]}`;
-  userLoggedIcon.classList.add('display_flex');
+  userLoggedText.title = `${User.firstname} ${User.lastname}`;
+  console.log(userLoggedText.innerHTML);
+  userLoggedIcon.classList.add('display-flex');
   loginIcon.classList.add('display_none');
   const UserForStorage = JSON.stringify(User);
   if (localStorage.getItem('currentUser')) {
     localStorage.removeItem('currentUser');
   }
   localStorage.setItem('currentUser', UserForStorage);
+  registerForm.classList.remove('display_flex');
+  overlay.style.display = 'none';
 }
 
 registerLink.addEventListener('click', openRegisterMenu);
 closeRegister.addEventListener('click', openRegisterMenu);
 overlay.addEventListener('click', (event) => closeRegisterMenu(event));
 buttonSignInDigitalBlock.addEventListener('click', openRegisterMenu);
-registerButton.addEventListener('click', registerUser);
+registerButton.addEventListener('click', (event) => registerUser(event));

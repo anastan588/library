@@ -580,6 +580,9 @@ h6 {
   position: relative;
   z-index: 3;
   cursor: pointer;
+  position: relative;
+  width: 28px;
+  height: 28px;
 }
 
 .display_none {
@@ -597,6 +600,7 @@ h6 {
   background-color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 4;
 }
 
 .user_icon_text {
@@ -606,6 +610,10 @@ h6 {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .main {
@@ -950,6 +958,7 @@ input[type=radio] {
 }
 .opacity {
   opacity: 1;
+  z-index: 5;
 }
 
 .no-opacity {
@@ -1031,6 +1040,7 @@ input[type=radio] {
   background-color: #ffffff;
   border: 1px solid #0c0c0e;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .own_button {
@@ -1701,4 +1711,172 @@ input[type=radio] {
     display: flex;
     gap: 15px;
   }
+}
+.lib_card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+  display: none;
+  flex-direction: column;
+  max-width: 640px;
+}
+
+.libcard_title {
+  background: #0c0c0e;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 15px;
+}
+
+.libcard_text {
+  color: #ffffff;
+  font-family: "Forum", sans-serif;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.libcard_close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.libcard_allblock {
+  padding: 30px 40px 40px 40px;
+  background-color: #ffffff;
+  display: flex;
+  gap: 40px;
+}
+
+.libcards_inputs_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.libcards_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.libcards_allinputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.libcards_input_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.libcards_input_title {
+  color: #000;
+  font-family: "InterNormal", sans-serif;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.3px;
+}
+
+.libcards_card_number {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.inputs_expcode {
+  display: flex;
+  gap: 10px;
+}
+
+.libcards_exp_code {
+  width: 45px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.libcards_cvc {
+  width: 45px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.cardholder {
+  margin-top: 10px;
+}
+
+.libcards_holdername {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.libcards_postalcode {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.libcards_city {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #bb945f;
+}
+
+.buttons_block_libcards {
+  margin-top: 10px;
+  display: flex;
+  gap: 25px;
+}
+
+.libcards_button_buy {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: "InterBold", sans-serif;
+  font-size: 62.5%;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 9px 27px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: #ffffff;
+}
+
+.libcards_price {
+  align-self: flex-end;
+  color: #0c0c0e;
+  font-family: "InterBold", sans-serif;
+  font-size: 125%;
+  font-weight: 700;
+  line-height: 125%; /* 100% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.libcards_text {
+  color: #8e8e8e;
+  font-family: "InterNormal", sans-serif;
+  font-size: 93.75%;
+  font-weight: 400;
+  line-height: 125%; /* 133.333% */
+  letter-spacing: 2px;
+  max-width: 330px;
+}
+
+.dispflex {
+  display: flex;
+}
+
+.dispnone {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
