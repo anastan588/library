@@ -126,6 +126,109 @@
           class="close_register"
         />
       </div>
+      <div class="lib_card">
+        <div class="libcard_title">
+          <p class="libcard_text">Buy a library card</p>
+          <img class="libcard_close" src="./assets/icons/close_btn_lib.svg" alt="close" />
+        </div>
+        <div class="libcard_allblock">
+          <div class="libcards_inputs_block">
+            <form class="libcards_form">
+              <div class="libcards_allinputs">
+                <div class="libcards_input_block">
+                  <p class="libcards_input_title">Bank card number</p>
+                  <input
+                    name="cardnumber"
+                    class="libcards_card_number"
+                    type="number"
+                    minlength="16"
+                    pattern="[0-9\s]{16,16}"
+                    required
+                  />
+                </div>
+                <div class="libcards_input_block">
+                  <p class="libcards_input_title">Expiration code</p>
+                  <div class="inputs_expcode">
+                    <input
+                      name="expcode"
+                      class="libcards_exp_code"
+                      type="number"
+                      minlength="2"
+                      maxlength="2"
+                      pattern="[0-9\s]{2,2}"
+                      required
+                    />
+                    <input
+                      name="expcode"
+                      class="libcards_exp_code"
+                      type="number"
+                      minlength="2"
+                      maxlength="2"
+                      pattern="[0-9\s]{2,2}"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="libcards_input_block">
+                  <p class="libcards_input_title">CVC</p>
+                  <input
+                    name="cvc"
+                    class="libcards_cvc"
+                    type="number"
+                    minlength="3"
+                    maxlength="3"
+                    pattern="[0-9\s]{3,3}"
+                    required
+                  />
+                </div>
+                <div class="libcards_input_block cardholder">
+                  <p class="libcards_input_title">Cardholder name</p>
+                  <input
+                    name="holdername"
+                    class="libcards_holdername"
+                    type="text"
+                    minlength="1"
+                    pattern="{1,}"
+                    required
+                  />
+                </div>
+                <div class="libcards_input_block">
+                  <p class="libcards_input_title">Postal code</p>
+                  <input
+                    name="postalcode"
+                    class="libcards_postalcode"
+                    type="number"
+                    minlength="1"
+                    pattern="{1,}"
+                    required
+                  />
+                </div>
+                <div class="libcards_input_block">
+                  <p class="libcards_input_title">City / Town</p>
+                  <input
+                    name="city"
+                    class="libcards_city"
+                    type="text"
+                    minlength="1"
+                    pattern="{1,}"
+                    required
+                  />
+                </div>
+                <div class="buttons_block_libcards">
+                  <button class="libcards_button_buy">Buy</button>
+                  <p class="libcards_price">$ 25.00</p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <p class="libcards_text">
+            If you are live, work, attend school, or pay property taxes in New
+            York State, you can get a $25 digital library card right now using
+            this online form. Visitors to New York State can also use this form
+            to apply for a temporary card.
+          </p>
+        </div>
+      </div>
       <div class="overlay"></div>
       <header class="header">
         <div class="container header_block">
@@ -1033,5 +1136,6 @@
     <script type="module" src="slider.js"></script>
     <script type="module" src="login.js"></script>
     <script type="module" src="register.js"></script>
+    <script type="module" src="libraryCard.js"></script>
   </body>
 </html>

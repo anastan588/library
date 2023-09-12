@@ -54,9 +54,9 @@ function openLoginMenu() {
 
 function closeLoginMenu() {
   if (registerDropMenu.classList.contains('display_flex')) {
-    registerDropMenu.classList.toggle('display_flex');
+    registerDropMenu.classList.remove('display_flex');
   }
-  loginForm.classList.toggle('display_flex');
+  loginForm.classList.remove('display_flex');
   overlay.style.display = 'none';
 }
 
