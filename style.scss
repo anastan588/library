@@ -1860,9 +1860,161 @@ input[type='radio'] {
   max-width: 330px;
 }
 
-.dispflex {
- display: flex;
-}
- .dispnone {
+.my_profile {
   display: none;
- }
+  position: relative;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+}
+.profile_sidebar {
+  background: $border_color_buttons;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.profile_icon {
+  padding: 27px 30px;
+  background-color: $background_color_buttons_books;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile_icon_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $background_color_books_line;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+  text-transform: capitalize;
+}
+.profile_name {
+  color: $color_text3;
+  text-align: center;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+  gap: 5px 15px;
+  background-color: $color_text1;
+}
+.profile_main {
+  padding: 40px 60px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: $color_text1;
+}
+.profile_close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.profile_title {
+  color: $color_text3;
+  font-family: $font_forum_bold;
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 125%; /* 50% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.profile_information {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.profile_statistics {
+  display: flex;
+  gap: 20px;
+}
+.statistics_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.stat_title {
+  color: $color_text3;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+  letter-spacing: 0.4px;
+}
+.stat_image {
+}
+.stat_number {
+  color: $color_text3;
+  font-family: $font_inter_regular;
+  font-size: 62.5%;
+  font-weight: 400;
+  line-height: 62.5%; /* 100% */
+  letter-spacing: 0.2px;
+}
+.profile_books {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.profile_books_title {
+  color: $color_text2;
+  font-family: $font_inter_regular;
+  font-size: 156.25%;
+  font-weight: 400;
+  line-height: 125%; /* 80% */
+}
+.profle_books_list {
+  color: $color_text3;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+  letter-spacing: 2px;
+  list-style: disc;
+}
+.profile_book_item {
+  margin-left: 20px;
+  list-style:disc;
+}
+.profile_card_information {
+  display: flex;
+  gap: 15px;
+}
+.profile_card_title {
+  color: $color_text3;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+}
+.profile_card_number {
+  color: $background_color_books_line;
+  font-family: $font_inter_regular;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: 125%; /* 100% */
+}
+.profile_card_image {
+}
+
+.dispflex {
+  display: flex;
+}
+.dispnone {
+  display: none;
+}
