@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'Forum';
-  src: url('./assets/fonts/Forum-Regular.ttf') format('truetype');
+  font-family: "Forum";
+  src: url("./assets/fonts/Forum-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'InterNormal';
-  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-family: "InterNormal";
+  src: url("./assets/fonts/Inter-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'InterBold';
-  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-family: "InterBold";
+  src: url("./assets/fonts/Inter-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
@@ -121,9 +121,9 @@ h6 {
 /*Normalize*/
 
 /*mixins*/
-$font_inter_regular: 'InterNormal', sans-serif;
-$font_inter_bold: 'InterBold', sans-serif;
-$font_forum_bold: 'Forum', sans-serif;
+$font_inter_regular: "InterNormal", sans-serif;
+$font_inter_bold: "InterBold", sans-serif;
+$font_forum_bold: "Forum", sans-serif;
 $background_color_header: #0c0c0e;
 $background_color_welcome: #0c0c0e;
 $background_color_footer: #0c0c0e;
@@ -175,7 +175,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  z-index: 4;
+  z-index: 7;
   display: none;
   flex-direction: column;
   gap: 20px;
@@ -509,7 +509,6 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   z-index: 3;
 }
 .registered_menu {
-  opacity: 0;
 }
 .title_registered {
   display: flex;
@@ -617,7 +616,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   padding-top: 220px;
   padding-bottom: 168px;
   display: flex;
-  background-image: url('./assets/images/welcome.jpg');
+  background-image: url("./assets/images/welcome.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-left: 0px;
@@ -897,7 +896,7 @@ $overlay-color: rgba(41, 41, 41, 0.4);
   font-size: 125%;
   line-height: 100%;
 }
-input[type='radio'] {
+input[type="radio"] {
   accent-color: $color_text3;
   height: 17px;
   width: 17px;
@@ -1862,7 +1861,6 @@ input[type='radio'] {
 
 .my_profile {
   display: none;
-  position: relative;
   max-width: 600px;
   position: fixed;
   top: 50%;
@@ -1922,6 +1920,7 @@ input[type='radio'] {
   position: absolute;
   top: 25px;
   right: 25px;
+  cursor: pointer;
 }
 .profile_title {
   color: $color_text3;
@@ -1989,7 +1988,7 @@ input[type='radio'] {
 }
 .profile_book_item {
   margin-left: 20px;
-  list-style:disc;
+  list-style: disc;
 }
 .profile_card_information {
   display: flex;

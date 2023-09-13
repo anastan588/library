@@ -2,12 +2,18 @@ const buyButtonsInBooksBlock = document.querySelectorAll('.book_button');
 const libraryCard = document.querySelector('.lib_card');
 const overlay = document.querySelector('.overlay');
 const closeLibraryCardCross = document.querySelector('.libcard_close');
+const loginForm = document.querySelector(".login_form");
 
 console.log(buyButtonsInBooksBlock);
 
 function openLibraryCard() {
   console.log(libraryCard);
-  libraryCard.classList.add('dispflex');
+  if(localStorage.getItem('currentUser')) {
+    libraryCard.classList.add('dispflex');
+  } else {
+    loginForm.classList.add("display_flex");
+  }
+  
   overlay.style.display = 'block';
 }
 
