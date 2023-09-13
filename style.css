@@ -144,7 +144,7 @@ h6 {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  z-index: 4;
+  z-index: 7;
   display: none;
   flex-direction: column;
   gap: 20px;
@@ -511,10 +511,6 @@ h6 {
   font-weight: 400;
   line-height: 125%;
   z-index: 3;
-}
-
-.registered_menu {
-  opacity: 0;
 }
 
 .title_registered {
@@ -1875,7 +1871,6 @@ input[type=radio] {
 
 .my_profile {
   display: none;
-  position: relative;
   max-width: 600px;
   position: fixed;
   top: 50%;
@@ -1941,6 +1936,7 @@ input[type=radio] {
   position: absolute;
   top: 25px;
   right: 25px;
+  cursor: pointer;
 }
 
 .profile_title {
